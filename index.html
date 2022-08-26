@@ -14,10 +14,10 @@
   <body>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-      <div class="container-fluid">
+      <div class="container">
         <img src="img/logo.png" alt="">
         <!-- <a class="navbar-brand" href="#"></a> -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -35,12 +35,47 @@
               <a class="nav-link" href="#FAQ">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Register</a>
+              <button type="button" class="btn btn-primary btn-sm">Register</button>
             </li>
           </ul>
         </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h3 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">BCR</h3>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item me-2">
+                <a class="nav-link active" aria-current="page" href="#Our-Services">Our Services</a>
+              </li>
+              <li class="nav-item me-2">
+                <a class="nav-link" href="#Why-Us">Why Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonial</a>
+              </li>
+              <li class="nav-item me-2">
+                <a class="nav-link" href="#FAQ">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-primary btn-sm">Register</button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+      </div>
+    </div>
 
     <section class="main-section"><br><br><br>
       <div class="row">
@@ -56,7 +91,7 @@
       </div>
     </section>
 
-    <section class="Our-Service" id="Our-Services"><br><br><br>
+    <section class="Our-Service container" id="Our-Services"><br><br><br>
       <div class="row justify-content-md-center">
         <div class="col-lg-5 Services">
           <img src="img/img_service.png" alt="">
@@ -74,11 +109,11 @@
       </div>
     </section>
 
-    <section class="why-us" id="Why-Us"><br><br><br>
+    <section class="why-us container" id="Why-Us"><br><br><br>
       <h3>Why Us?</h3>
       <p>Mengapa harus pilih Binar Car Rental?</p>
       <div class="row">
-        <div class="col">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="card">
             <div class="card-body">
               <img src="img/icon_complete.png" alt="...">
@@ -87,7 +122,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="card">
             <div class="card-body">
               <img src="img/icon_price.png" alt="...">
@@ -96,7 +131,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="card">
             <div class="card-body">
               <img src="img/icon_24hrs.png" alt="...">
@@ -105,7 +140,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="card">
             <div class="card-body">
               <img src="img/icon_professional.png" alt="...">
@@ -117,7 +152,7 @@
       </div>
     </section>
 
-    <section id="testimonial"><br><br><br>
+    <section id="testimonial" class="container"><br><br><br>
       <div class="">
           <h3 class="text-center">Testimonial</h3>
           <p class="text-center">Berbagai review positif dari para pelanggan kami</p>
@@ -125,10 +160,10 @@
               <div class="carousel-inner">
                   <div class="carousel-item active bg-aliceblue">
                       <div class="row mx-4 my-5">
-                          <div class="col-xl-2 m-auto">
+                          <div class="col-lg-2 m-auto">
                               <img src="img/photo1-testimoni.png" class="d-block testimonial-img m-auto" alt="Person">
                           </div>
-                          <div class="col-xl-10">
+                          <div class="col-lg-10">
                               <img src="img/Rate.png" class="testimonial-rating" alt="Rating">
                               <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
                               <p class="testimonial-name">John Dee 32, Bromo</p>
@@ -137,10 +172,10 @@
                   </div>
                   <div class="carousel-item bg-aliceblue">
                       <div class="row mx-4 my-5">
-                          <div class="col-xl-2 m-auto">
+                          <div class="col-lg-2 m-auto">
                               <img src="img/photo2-testimoni.png" class="d-block testimonial-img m-auto" alt="Person">
                           </div>
-                          <div class="col-xl-10">
+                          <div class="col-lg-10">
                               <img src="img/Rate.png" class="testimonial-rating" alt="Rating">
                               <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod””</p>
                               <p class="testimonial-name">John Dee 32, Bromo</p>
@@ -149,10 +184,10 @@
                   </div>
                   <div class="carousel-item bg-aliceblue">
                       <div class="row mx-4 my-5">
-                          <div class="col-xl-2 m-auto">
+                          <div class="col-lg-2 m-auto">
                               <img src="img/photo1-testimoni.png" class="d-block testimonial-img m-auto" alt="Person">
                           </div>
-                          <div class="col-xl-10">
+                          <div class="col-lg-10">
                               <img src="img/Rate.png" class="testimonial-rating" alt="Rating">
                               <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod””</p>
                               <p class="testimonial-name">John Dee 32, Bromo</p>
@@ -166,15 +201,18 @@
               </div>
           </div>
       </div>
+    </section><br><br>
+
+    <section class="container">
+      <div class="Getting-Started">
+        <h2>Sewa Mobil di (Lokasimu) Sekarang</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <button class="button-28" role="button">Mulai Sewa Mobil</button>
+      </div>
+      
     </section>
 
-    <section class="Getting-Started">
-      <h2>Sewa Mobil di (Lokasimu) Sekarang</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-      <button class="button-28" role="button">Mulai Sewa Mobil</button>
-    </section>
-
-    <section class="faq" id="FAQ"><br><br><br>
+    <section class="faq container" id="FAQ"><br><br><br>
       <div class="row">
         <div class="col-lg-5">
           <h3>Frequently Asked Question</h3>
@@ -249,18 +287,18 @@
 
     <footer class="footer">
       <div class="row">
-        <div class="col-md-3 col-12">
+        <div class="col-lg-3 col-md-6 col-12">
           <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
           <p>binarcarrental@gmail.com</p>
           <p>081-233-334-808</p>
         </div>
-        <div class="col-md-2 col-12">
+        <div class="col-lg-2 col-md-6 col-12">
           <a href="#Our-Services">Our services</a><br>
           <a href="#Why-Us">Why Us</a><br>
           <a href="#testimonial">Testimonial</a><br>
           <a href="#FAQ">FAQ</a><br>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-lg-4 col-md-6 col-sm-12">
           <p>Connect with us</p>
           <img src="img/icon_facebook.png" alt="">
           <img src="img/icon_instagram.png" alt="">
@@ -268,7 +306,7 @@
           <img src="img/icon_mail.png" alt="">
           <img src="img/icon_twitch.png" alt="">
         </div>
-        <div class="col-md-3 col-sm-12">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <p>Copyright Binar 2022</p>
           <img src="img/logo.png" alt="">
         </div>

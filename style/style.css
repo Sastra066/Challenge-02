@@ -335,7 +335,7 @@ h3{
 
  @media (min-width: 1350px) { 
     .main-section{
-        padding-left: 10%;
+        padding-left: 8%;
     }
  }
 
@@ -360,7 +360,13 @@ h3{
 
  @media (min-width: 1550px) { 
     .main-section{
-        padding-left: 10%;
+        display: flex;
+        padding: 0;
+        justify-content: center !important;
+    }
+    .main-section .row{
+        max-width: 1400px !important;
+        margin-top: 70px;
     }
  }
 
